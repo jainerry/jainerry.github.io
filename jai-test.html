@@ -125,22 +125,26 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", () => {
 
-        const iframe = document.getElementById("myIframe");
-        console.log(iframe)
+      function iframeOnload() {
+          document.addEventListener("DOMContentLoaded", () => {
 
-        const iWindow = iframe.contentWindow;
-        console.log(iWindow)
+          const iframe = document.getElementById("myIframe");
+          console.log(iframe)
 
-        const iDocument = iWindow.document;
-        console.log(iDocument)
+          const iWindow = iframe.contentWindow;
+          console.log(iWindow)
 
-        const element = iDocument.getElementsByTagName("p")[0];
-        element.style.color = "green";
+          const iDocument = iWindow.document;
+          console.log(iDocument)
+
+          const element = iDocument.getElementsByTagName("p")[0];
+          element.style.color = "green";
 
 
-      });
+        });
+        }
+      
   </script>
 
 </body>
