@@ -76,7 +76,7 @@
       <div class="container">
 
         <div class="row gy-4">
-          <iframe id="myIframe" src="portfolio-1-details.html" width="100%" height="700" frameborder="0" scrolling="auto" allowtransparency="true" onload="iframeOnload()"></iframe>
+          <iframe id="myIframe" src="iframe.html" width="100%" height="700" frameborder="0" scrolling="auto" allowtransparency="true" onload="iframeOnload()"></iframe>
         </div>
 
       </div>
@@ -122,31 +122,25 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
   <script type="text/javascript">
-    function iframeOnload() {
-      console.log($('#myIframe').contents().find('div'));
+      document.addEventListener("DOMContentLoaded", () => {
 
-      console.log('onloaded')
-      const iframe = document.getElementById("myIframe");
-      console.log(iframe)
+        const iframe = document.getElementById("myIframe");
+        console.log(iframe)
 
-      console.log($(iframe).contents().find('div'));
+        const iWindow = iframe.contentWindow;
+        console.log(iWindow)
 
-      const iWindow = iframe.contentWindow;
-      console.log(iWindow)
+        const iDocument = iWindow.document;
+        console.log(iDocument)
 
-      const iDocument = iWindow.document;
-      console.log(iDocument)
+        const element = iDocument.getElementsByTagName("p")[0];
+        element.style.color = "green";
 
-      // accessing the element
-      // const element = iDocument.getElementsByTagName("p")[0];
-      // const element = iframe.getElementsByTagName("p")[0];
-      // element.style.color = "green";
 
-      var frameObj = document.getElementById('myIframe');
-      var frameContent = frameObj.contentWindow.document.body.innerHTML;
-      console.log("frame content : " + frameContent);
-    }
+      });
   </script>
 
 </body>
