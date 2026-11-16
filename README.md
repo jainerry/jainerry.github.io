@@ -1,4 +1,4 @@
-Jainerry Olediana
+Jainerry Dulay
 
 A Full-stack Web Developer from the Philippines, who loves to work with diverse industries and users. Developing solutions not just by knowing the wants but also understanding the needs of the clients.
 
