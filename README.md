@@ -1,7 +1,5 @@
-# Jainerry portfolio
+Jainerry Olediana
 
-A responsive HTML5 fullstack developer portfolio. Open `index.html` directly, or visit `http://localhost/jainerry-portfolio/` with WampServer running. No build or installation required.
+A Full-stack Web Developer from the Philippines, who loves to work with diverse industries and users. Developing solutions not just by knowing the wants but also understanding the needs of the clients.
 
-Edit the name, introduction, skills, and email in `index.html`. Replace the illustrative projects in `index.html` and their detail content in `script.js` with your real work. Base styles are in `styles.css`; the modern visual design and responsive overrides are in `modern.css`. Google Fonts is optional; local fallback fonts work offline.
-
-Includes mobile navigation, project category filters, accessible project dialogs, reduced-motion support, and semantic page sections. Contact links open your email client; no form backend is required.
+A dedicated and efficient web developer with 8 years of total experience in full-stack web application, mobile responsive design and customer relationship management system development. Capable of working with a variety of web development technologies, and managing databases. Valuable team member who has experience diagnosing problems and developing solutions. Highly motivated individual, eager to learn new things, innovative and flexible.
